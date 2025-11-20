@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
     app: thinknyx
   name: thinknyx
@@ -13,12 +12,12 @@ spec:
   strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: thinknyx
     spec:
       containers:
       - image: thinknyx/demoapp:v1
         name: demoapp
-        resources: {}
+        ports:
+        - containerPort: 80
 status: {}

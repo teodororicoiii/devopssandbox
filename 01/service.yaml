@@ -5,6 +5,7 @@ metadata:
   labels:
     app: thinknyx
   name: thinknyx
+  namespace: 01
 spec:
   ports:
   - port: 8080
